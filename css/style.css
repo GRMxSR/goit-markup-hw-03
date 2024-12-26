@@ -4,6 +4,11 @@ body {
   background-color: #ffffff;
   font-weight: 500;
 }
+.container {
+  width: 1410px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -12,6 +17,26 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+.header .logo {
+  padding-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .logo:hover,
 .logo:focus {
@@ -25,6 +50,8 @@ button {
 }
 ol,
 ul {
+  margin: 0;
+  padding-left: 0;
   list-style-type: none;
 }
 a {
@@ -60,9 +87,27 @@ address {
 }
 
 header {
+  margin-bottom: 2px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background: #ffffff;
 }
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-nav {
+  display: flex;
+  gap: 40px;
+}
+
 .page-nav .nav-link {
+  display: block;
+  padding: 0px, 0px, 0px, 0px;
+  text-decoration: none;
+
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
@@ -72,7 +117,13 @@ header {
 .page-nav .nav-link:active {
   color: #404bbf;
 }
+.list-contacts {
+  display: flex;
+  gap: 40px;
+}
 .list-contacts .item-contacts {
+  display: block;
+  padding: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
